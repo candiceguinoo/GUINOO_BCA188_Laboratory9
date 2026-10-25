@@ -36,21 +36,20 @@ This activity is about using WiFiManager with an ESP32. It allows the ESP32 to c
 <img width="1080" height="1986" alt="24b0ca8c-6a33-4c01-90c4-c38745655f92" src="https://github.com/user-attachments/assets/f58d3b8b-a0c0-4367-8652-dfd46c15df96" />
 <img width="1080" height="1523" alt="2801ffee-307e-4be4-a1a8-b0f37e2b321e" src="https://github.com/user-attachments/assets/905e8668-447e-4550-ab70-5fb982d4e435" />
 
-## Tasks and Results
+## Tasks 
 
 ### Task 1: Test an Incorrect Wi-Fi Password
 
 I entered an incorrect Wi-Fi password to check what would happen. The ESP32 failed to connect to the Wi-Fi network, and the Serial Monitor showed a connection error.
 
 <img width="1535" height="862" alt="75a5fff5-2706-425a-96e6-b53b58df4977" src="https://github.com/user-attachments/assets/719c46c8-674e-4e5c-9f17-df497dd4e34b" />
-Result: The ESP32 could not connect because the Wi-Fi password was incorrect.
+
 
 ### Task 2: Reset the Saved Wi-Fi Settings
 
 I added a function that checks if the BOOT button is held for three seconds. When I held the button, the ESP32 erased the saved Wi-Fi settings and restarted.
 
 <img width="1535" height="862" alt="92eb9c1a-ca24-4c59-8f63-b1630554692e" src="https://github.com/user-attachments/assets/612d9b22-4be8-4f9e-a902-00d6c5328377" />
-Result: The saved Wi-Fi details were erased, and the ESP32 returned to the setup process.
 
 ### Task 3: Change the Setup Network Name
 <img width="1080" height="1526" alt="741ed1e4-dc92-4aa9-b1db-501fabe1453a" src="https://github.com/user-attachments/assets/3f33e0eb-00cf-42b1-8f10-602ad335c82b" />
@@ -59,14 +58,23 @@ Result: The saved Wi-Fi details were erased, and the ESP32 returned to the setup
 I changed the setup network name from `BCA188-ESP32-2024-2155` to `BCA188-ESP32-2024-2155-TEST`. After uploading the updated code, I checked the Wi-Fi list on my phone.
 
 <img width="1535" height="862" alt="d7958c60-d87b-43e6-8e9d-ade40da006cb" src="https://github.com/user-attachments/assets/73764d3e-4d2a-4848-86fb-455a1351a01f" />
-Result: The new setup network name appeared on my phone. After testing, I changed the name back to `BCA188-ESP32-2024-2155`.
 
 ### Task 4: Connect to a Different Wi-Fi Network
 
 I used my phone's hotspot named `candice` instead of my usual Wi-Fi network. The ESP32 connected successfully and received the IP address `192.168.43.125`.
 
 <img width="1535" height="862" alt="e21ba9f7-b69c-44ea-8aac-c02df9d344f5" src="https://github.com/user-attachments/assets/be15e671-c1fd-49e2-b12b-ad73e91bd912" />
-Result: The ESP32 was able to connect to a different Wi-Fi network without changing the Wi-Fi credentials directly in the code.
+
+## Results and Observations
+
+Record the result of each task in the table below.
+
+| Task | What to do | What you observe |
+|---|---|---|
+| **1. Wrong password** | Enter a wrong password on the setup page. | The ESP32 failed to connect to the Wi-Fi network. The Serial Monitor showed a connection error because the password was incorrect. |
+| **2. Reset settings** | Hold the BOOT button for 3 seconds while the board is running. | The Serial Monitor showed that the saved Wi-Fi settings were erased. The ESP32 restarted and returned to the setup process. |
+| **3. Change the name** | Change the network name, upload, and check your phone's Wi-Fi list. | The new network name, `BCA188-ESP32-2024-2155-TEST`, appeared in my phone's Wi-Fi list. |
+| **4. Different network** | Reset the board, then connect to your phone hotspot. | The ESP32 successfully connected to my phone hotspot named `candice`. The Serial Monitor showed the IP address `192.168.43.125`. |
 
 ## Conclusion
 
