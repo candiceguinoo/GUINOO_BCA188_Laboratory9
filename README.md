@@ -49,7 +49,7 @@ Result: The ESP32 could not connect because the Wi-Fi password was incorrect.
 
 I added a function that checks if the BOOT button is held for three seconds. When I held the button, the ESP32 erased the saved Wi-Fi settings and restarted.
 
-<img width="1535" height="862" alt="f9d87b84-9c08-4b70-8f73-5a88cbabbdb5" src="https://github.com/user-attachments/assets/3b7beae0-0940-42da-89ce-7bef271263fe" />
+<img width="1535" height="862" alt="92eb9c1a-ca24-4c59-8f63-b1630554692e" src="https://github.com/user-attachments/assets/612d9b22-4be8-4f9e-a902-00d6c5328377" />
 Result: The saved Wi-Fi details were erased, and the ESP32 returned to the setup process.
 
 ### Task 3: Change the Setup Network Name
