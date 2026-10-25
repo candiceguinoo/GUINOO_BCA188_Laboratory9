@@ -67,8 +67,6 @@ I used my phone's hotspot named `candice` instead of my usual Wi-Fi network. The
 
 ## Results and Observations
 
-Record the result of each task in the table below.
-
 | Task | What to do | What you observe |
 |---|---|---|
 | **1. Wrong password** | Enter a wrong password on the setup page. | The ESP32 failed to connect to the Wi-Fi network. The Serial Monitor showed a connection error because the password was incorrect. |
